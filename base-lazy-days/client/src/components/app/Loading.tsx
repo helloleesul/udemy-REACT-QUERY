@@ -4,7 +4,7 @@ import { useIsFetching } from "@tanstack/react-query";
 export function Loading() {
   // will use React Query `useIsFetching` to determine whether or not to display
   const isFetching = useIsFetching();
-  // useIsFetching 현재 가져오는 쿼리가 있는지 여부를 나타내는 훅
+  // useIsFetching 현재 가져오는 쿼리의 수를 알려주는 훅, 0이면 false
   const display = isFetching ? "inherit" : "none";
 
   return (
